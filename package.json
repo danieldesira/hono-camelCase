@@ -1,0 +1,36 @@
+{
+  "name": "hono-camelcase",
+  "version": "0.1.0",
+  "description": "Hono middleware to enforce camelCase in JSON responses.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest run src/index.test.ts",
+    "build": "tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldesira/hono-camelCase.git"
+  },
+  "keywords": [
+    "hono",
+    "camelCase",
+    "json",
+    "nodejs"
+  ],
+  "author": "Daniel Desira",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/danieldesira/hono-camelCase/issues"
+  },
+  "homepage": "https://github.com/danieldesira/hono-camelCase#readme",
+  "devDependencies": {
+    "hono": "^4.11.7",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
