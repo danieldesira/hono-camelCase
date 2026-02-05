@@ -1,5 +1,5 @@
 import { createMiddleware } from "hono/factory";
-import { convertObjectKeysToCamelCase } from "./lib";
+import { convertObjectKeysToCamelCase } from "./lib.js";
 
 export const enforceCamelCase = createMiddleware(async (c, next) => {
   await next();

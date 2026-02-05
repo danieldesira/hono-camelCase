@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { convertObjectKeysToCamelCase } from "./lib";
+import { convertObjectKeysToCamelCase } from "./lib.js";
 
 describe("JSON camelCase enforcement", () => {
   test("Convert snake_case to camelCase", () => {

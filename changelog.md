@@ -1,3 +1,7 @@
+# 0.2.1 05/02/2026 17:35 UTC+1
+
+- Fix reference to `lib.js`
+
 # 0.2.0 05/02/2026 17:30 UTC+1
 
 - Provide TS type declarations
