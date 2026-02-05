@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { convertObjectKeysToCamelCase } from ".";
+import { convertObjectKeysToCamelCase } from "./lib";
 
 describe("JSON camelCase enforcement", () => {
   test("Convert snake_case to camelCase", () => {
@@ -54,5 +54,27 @@ describe("JSON camelCase enforcement", () => {
       ],
     });
     expect(JSON.stringify(result)).toEqual(`{"dogs":[{"dogName":"Fido"}]}`);
+  });
+
+  test("Convert recursive array snake_case to camelCase", () => {
+    const result = convertObjectKeysToCamelCase([
+      [
+        {
+          dog_name: "Fido",
+        },
+      ],
+    ]);
+    expect(JSON.stringify(result)).toEqual('[[{"dogName":"Fido"}]]');
+  });
+
+  test("Convert recursive array PascalCase to camelCase", () => {
+    const result = convertObjectKeysToCamelCase([
+      [
+        {
+          DogName: "Fido",
+        },
+      ],
+    ]);
+    expect(JSON.stringify(result)).toEqual('[[{"dogName":"Fido"}]]');
   });
 });
