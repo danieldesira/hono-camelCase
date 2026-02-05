@@ -1,11 +1,8 @@
 export const convertObjectKeysToCamelCase = (
   data: Record<string, unknown> | Array<unknown>,
-) => {
+): Record<string, unknown> | Array<unknown> => {
   if (Array.isArray(data)) {
-    for (let count = 0; count < data.length; count++) {
-      data[count] = convertCurrentValue(data[count]);
-    }
-    return data;
+    return data.map(convertCurrentValue);
   } else {
     const transformedData: Record<string, unknown> = {};
     for (const key in data) {

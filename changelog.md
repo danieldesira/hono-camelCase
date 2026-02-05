@@ -1,3 +1,7 @@
+# 0.2.2 05/02/2026 19:45 UTC+1
+
+- Simplify code path for arrays
+
 # 0.2.1 05/02/2026 17:35 UTC+1
 
 - Fix reference to `lib.js`
