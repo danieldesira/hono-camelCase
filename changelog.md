@@ -1,3 +1,7 @@
+# 0.2.3 06/02/2026 15:35 UTC+1
+
+- Fix error when response has no content
+
 # 0.2.2 05/02/2026 19:45 UTC+1
 
 - Simplify code path for arrays

@@ -1,6 +1,6 @@
 {
   "name": "hono-camelcase",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Hono middleware to enforce camelCase in JSON responses.",
   "type": "module",
   "main": "dist/index.js",
