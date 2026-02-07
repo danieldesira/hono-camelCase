@@ -1,3 +1,7 @@
+# 0.2.4 07/02/2026 19:20 UTC+1
+
+- Improve response JSON check
+
 # 0.2.3 06/02/2026 15:35 UTC+1
 
 - Fix error when response has no content
