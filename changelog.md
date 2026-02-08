@@ -1,3 +1,7 @@
+# 0.2.5 08/02/2026 19:15 UTC+1
+
+- Update build files solving issues
+
 # 0.2.4 07/02/2026 19:20 UTC+1
 
 - Improve response JSON check
